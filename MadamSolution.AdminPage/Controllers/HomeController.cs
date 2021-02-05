@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 using MadamSolution.AdminPage.Models;
 using Microsoft.AspNetCore.Authorization;
 
-namespace MadamSolution.AdminApp.Controllers
+namespace MadamSolution.AdminPage.Controllers
 {
     [Authorize]
     public class HomeController : Controller

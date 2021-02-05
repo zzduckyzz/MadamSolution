@@ -1,4 +1,5 @@
-﻿using MadamSolution.ViewModels.System.Users;
+﻿using MadamSolution.ViewModels.Common;
+using MadamSolution.ViewModels.System.Users;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -11,5 +12,7 @@ namespace MadamSolution.Application.System.Users
         Task<string> Authencate(LoginRequest request);
 
         Task<bool> Register(RegisterRequest request);
+
+        Task<PagedResult<UserVm>> GetUsersPaging(GetUserPagingRequest request);
     }
 }

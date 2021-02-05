@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace MadamSolution.AdminPage.Controllers
+namespace MadamSolution.AdminApp.Controllers
 {
     [Authorize]
     public class BaseController : Controller

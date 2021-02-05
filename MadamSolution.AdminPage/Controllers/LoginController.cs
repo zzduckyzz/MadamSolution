@@ -5,7 +5,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using MadamSolution.AdminPage.Services;
+using MadamSolution.AdminApp.Services;
 using MadamSolution.ViewModels.System.Users;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -15,7 +15,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Logging;
 using Microsoft.IdentityModel.Tokens;
 
-namespace MadamSolution.AdminPage.Controllers
+namespace MadamSolution.AdminApp.Controllers
 {
     public class LoginController : Controller
     {

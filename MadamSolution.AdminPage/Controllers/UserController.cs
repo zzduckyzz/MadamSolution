@@ -5,7 +5,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using MadamSolution.AdminPage.Services;
+using MadamSolution.AdminApp.Services;
 using MadamSolution.ViewModels.System.Users;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -15,7 +15,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Logging;
 using Microsoft.IdentityModel.Tokens;
 
-namespace MadamSolution.AdminPage.Controllers
+namespace MadamSolution.AdminApp.Controllers
 {
     public class UserController : BaseController
     {
@@ -28,7 +28,7 @@ namespace MadamSolution.AdminPage.Controllers
             _configuration = configuration;
         }
 
-        public async Task<IActionResult> Index(string keyword, int pageIndex = 1, int pageSize = 10)
+        public async Task<IActionResult> Index(string keyword, int pageIndex = 1, int pageSize = 1)
         {
             var request = new GetUserPagingRequest()
             {
@@ -38,6 +38,13 @@ namespace MadamSolution.AdminPage.Controllers
             };
             var data = await _userApiClient.GetUsersPagings(request);
             return View(data.ResultObj);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Details(Guid id)
+        {
+            var result = await _userApiClient.GetById(id);
+            return View(result.ResultObj);
         }
 
         [HttpGet]

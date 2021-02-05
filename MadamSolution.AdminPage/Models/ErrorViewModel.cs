@@ -1,6 +1,6 @@
 using System;
 
-namespace MadamSolution.AdminPage.Models
+namespace MadamSolution.AdminApp.Models
 {
     public class ErrorViewModel
     {

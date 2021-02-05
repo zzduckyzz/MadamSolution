@@ -11,7 +11,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MadamSolution.AdminPage.Services
+namespace MadamSolution.AdminApp.Services
 {
     public class UserApiClient : IUserApiClient
     {

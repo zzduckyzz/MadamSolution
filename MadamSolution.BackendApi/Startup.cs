@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using MadamSolution.Application.Catalog.Products;
 using MadamSolution.Application.Common;
+using MadamSolution.Application.System.Roles;
 using MadamSolution.Application.System.Users;
 using MadamSolution.Data.EF;
 using MadamSolution.Data.Entities;
@@ -48,6 +49,7 @@ namespace MadamSolution.BackendApi
             services.AddTransient<SignInManager<AppUser>, SignInManager<AppUser>>();
             services.AddTransient<RoleManager<AppRole>, RoleManager<AppRole>>();
             services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IRoleService, RoleService>();
 
             //services.AddTransient<IValidator<LoginRequest>, LoginRequestValidator>();
             //services.AddTransient<IValidator<RegisterRequest>, RegisterRequestValidator>();
@@ -57,7 +59,7 @@ namespace MadamSolution.BackendApi
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Swagger Madam Solution", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Swagger eShop Solution", Version = "v1" });
 
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
@@ -141,7 +143,7 @@ namespace MadamSolution.BackendApi
 
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Swagger MadamSolution V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Swagger Madam V1");
             });
 
             app.UseEndpoints(endpoints =>

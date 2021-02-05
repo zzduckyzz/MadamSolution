@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace MadamSolution.AdminPage
+namespace MadamSolution.AdminApp
 {
     public class Program
     {

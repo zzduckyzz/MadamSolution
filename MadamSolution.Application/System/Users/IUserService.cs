@@ -18,5 +18,9 @@ namespace MadamSolution.Application.System.Users
         Task<ApiResult<PagedResult<UserVm>>> GetUsersPaging(GetUserPagingRequest request);
 
         Task<ApiResult<UserVm>> GetById(Guid id);
+
+        Task<ApiResult<bool>> Delete(Guid id);
+
+        Task<ApiResult<bool>> RoleAssign(Guid id, RoleAssignRequest request);
     }
 }

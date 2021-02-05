@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+using MadamSolution.AdminApp.Services;
 using MadamSolution.ViewModels.System.Users;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -13,9 +13,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using MadamSolution.AdminApp.Services;
 
-namespace MadamSolution.AdminPage
+namespace MadamSolution.AdminApp
 {
     public class Startup
     {
@@ -33,10 +32,10 @@ namespace MadamSolution.AdminPage
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
-                {
-                    options.LoginPath = "/Login/Index";
-                    options.AccessDeniedPath = "/User/Forbidden/";
-                });
+            {
+                options.LoginPath = "/Login/Index";
+                options.AccessDeniedPath = "/User/Forbidden/";
+            });
 
             services.AddControllersWithViews()
                      .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginRequestValidator>());
@@ -48,6 +47,7 @@ namespace MadamSolution.AdminPage
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             services.AddTransient<IUserApiClient, UserApiClient>();
+            services.AddTransient<IRoleApiClient, RoleApiClient>();
 
             IMvcBuilder builder = services.AddRazorPages();
             var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");

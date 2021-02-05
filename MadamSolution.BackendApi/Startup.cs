@@ -43,8 +43,7 @@ namespace MadamSolution.BackendApi
             //Declare DI
             services.AddTransient<IStorageService, FileStorageService>();
 
-            services.AddTransient<IPublicProductService, PublicProductService>();
-            services.AddTransient<IManageProductService, ManageProductService>();
+            services.AddTransient<IProductService, ProductService>();
             services.AddTransient<UserManager<AppUser>, UserManager<AppUser>>();
             services.AddTransient<SignInManager<AppUser>, SignInManager<AppUser>>();
             services.AddTransient<RoleManager<AppRole>, RoleManager<AppRole>>();
@@ -58,7 +57,7 @@ namespace MadamSolution.BackendApi
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Swagger eShop Solution", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Swagger Madam Solution", Version = "v1" });
 
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
@@ -142,7 +141,7 @@ namespace MadamSolution.BackendApi
 
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Swagger Madam V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Swagger MadamSolution V1");
             });
 
             app.UseEndpoints(endpoints =>

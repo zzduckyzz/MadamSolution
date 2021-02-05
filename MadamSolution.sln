@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MadamSolution.ViewModels", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MadamSolution.BackendApi", "MadamSolution.BackendApi\MadamSolution.BackendApi.csproj", "{56D28657-0BCB-4BD9-B217-E70C59184985}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MadamSolution.AdminPage", "MadamSolution.AdminPage\MadamSolution.AdminPage.csproj", "{CB85F7AE-D029-4539-B033-D5712F726713}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MadamSolution.AdminApp", "MadamSolution.AdminPage\MadamSolution.AdminApp.csproj", "{CB85F7AE-D029-4539-B033-D5712F726713}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

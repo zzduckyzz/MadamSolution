@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MadamSolution.AdminPage.Services
+namespace MadamSolution.AdminApp.Services
 {
     public interface IUserApiClient
     {

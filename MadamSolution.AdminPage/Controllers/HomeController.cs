@@ -5,10 +5,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using MadamSolution.AdminPage.Models;
+using MadamSolution.AdminApp.Models;
 using Microsoft.AspNetCore.Authorization;
 
-namespace MadamSolution.AdminPage.Controllers
+namespace MadamSolution.AdminApp.Controllers
 {
     public class HomeController : BaseController
     {

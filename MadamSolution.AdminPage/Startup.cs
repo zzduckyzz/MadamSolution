@@ -32,10 +32,10 @@ namespace MadamSolution.AdminApp
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
-            {
-                options.LoginPath = "/Login/Index";
-                options.AccessDeniedPath = "/User/Forbidden/";
-            });
+                {
+                    options.LoginPath = "/Login/Index";
+                    options.AccessDeniedPath = "/User/Forbidden/";
+                });
 
             services.AddControllersWithViews()
                      .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginRequestValidator>());
@@ -50,8 +50,7 @@ namespace MadamSolution.AdminApp
             services.AddTransient<IRoleApiClient, RoleApiClient>();
             services.AddTransient<ILanguageApiClient, LanguageApiClient>();
             services.AddTransient<IProductApiClient, ProductApiClient>();
-
-
+            services.AddTransient<ICategoryApiClient, CategoryApiClient>();
 
             IMvcBuilder builder = services.AddRazorPages();
             var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");

@@ -76,7 +76,7 @@ namespace MadamSolution.Data.Migrations
                         new
                         {
                             Id = new Guid("223f4c1d-fa90-4c3e-9bee-6d29c7be76a8"),
-                            ConcurrencyStamp = "23f8914e-d059-4cdd-a68b-cc6d824371a7",
+                            ConcurrencyStamp = "b55ecf6e-aad7-4439-8263-45e7ac53ccfd",
                             Description = "Administrator role",
                             Name = "admin",
                             NormalizedName = "admin"
@@ -149,7 +149,7 @@ namespace MadamSolution.Data.Migrations
                         {
                             Id = new Guid("a0381e29-f86d-4377-8661-8186912b8fe9"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "b5f6b0d2-e730-442c-8b32-c23cc20ed2e5",
+                            ConcurrencyStamp = "1d95e88d-071b-4bcc-8416-5005384aad91",
                             Dob = new DateTime(2021, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "duc.phamminh94@gmail.com",
                             EmailConfirmed = true,
@@ -158,7 +158,7 @@ namespace MadamSolution.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "duc.phamminh94@gmail.com",
                             NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAEEtVOPV4aqgCbRsGxsw+CzfQ3HEeiDxbRiT45B940qeq7asLACxj5fBVQMtFY6qpYg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEGrrB9A2vkGebUcZElM7Q3xWoSepl+LhIiL3yC9DAtI/3OPr5WeUvI0vW7NLSM+6oA==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -292,7 +292,7 @@ namespace MadamSolution.Data.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            LanguageId = "vi-VN",
+                            LanguageId = "vi",
                             Name = "Áo Blazer",
                             SeoAlias = "ao-blazer",
                             SeoDescription = "blazer nữ",
@@ -302,7 +302,7 @@ namespace MadamSolution.Data.Migrations
                         {
                             Id = 2,
                             CategoryId = 1,
-                            LanguageId = "en-US",
+                            LanguageId = "en",
                             Name = "Women Blazer",
                             SeoAlias = "women-blazer",
                             SeoDescription = "blazer for women",
@@ -312,7 +312,7 @@ namespace MadamSolution.Data.Migrations
                         {
                             Id = 3,
                             CategoryId = 2,
-                            LanguageId = "vi-VN",
+                            LanguageId = "vi",
                             Name = "Áo phông nữ",
                             SeoAlias = "ao-phong-nu",
                             SeoDescription = "áo phông cho nữ",
@@ -322,7 +322,7 @@ namespace MadamSolution.Data.Migrations
                         {
                             Id = 4,
                             CategoryId = 2,
-                            LanguageId = "en-US",
+                            LanguageId = "en",
                             Name = "Women T-Shirt",
                             SeoAlias = "women-Tshirt",
                             SeoDescription = "The Tshirt products for women",
@@ -388,13 +388,13 @@ namespace MadamSolution.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "vi-VN",
+                            Id = "vi",
                             IsDefault = true,
                             Name = "Tiếng Việt"
                         },
                         new
                         {
-                            Id = "en-US",
+                            Id = "en",
                             IsDefault = false,
                             Name = "English"
                         });
@@ -506,7 +506,7 @@ namespace MadamSolution.Data.Migrations
                         new
                         {
                             Id = 1,
-                            DateCreated = new DateTime(2021, 2, 1, 11, 6, 45, 355, DateTimeKind.Local).AddTicks(5656),
+                            DateCreated = new DateTime(2021, 3, 4, 3, 45, 47, 262, DateTimeKind.Local).AddTicks(7851),
                             OriginalPrice = 100000m,
                             Price = 200000m,
                             Stock = 0,
@@ -631,7 +631,7 @@ namespace MadamSolution.Data.Migrations
                             Id = 1,
                             Description = "Áo phông trơn zara",
                             Details = "Áo phông trơn zara",
-                            LanguageId = "vi-VN",
+                            LanguageId = "vi",
                             Name = "Áo phông trơn zara",
                             ProductId = 1,
                             SeoAlias = "ao-phong-tron-zara",
@@ -643,7 +643,7 @@ namespace MadamSolution.Data.Migrations
                             Id = 2,
                             Description = "Áo phông zara",
                             Details = "Áo phông zara",
-                            LanguageId = "en-US",
+                            LanguageId = "en",
                             Name = "Zara T-Shirt Women",
                             ProductId = 1,
                             SeoAlias = "zara-t-shirt-women",

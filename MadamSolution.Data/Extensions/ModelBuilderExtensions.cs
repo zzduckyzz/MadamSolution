@@ -18,8 +18,8 @@ namespace MadamSolution.Data.Extensions
                new AppConfig() { Key = "HomeDescription", Value = "OnlineShop" }
                );
             modelBuilder.Entity<Language>().HasData(
-                new Language() { Id = "vi-VN", Name = "Tiếng Việt", IsDefault = true },
-                new Language() { Id = "en-US", Name = "English", IsDefault = false });
+                new Language() { Id = "vi", Name = "Tiếng Việt", IsDefault = true },
+                new Language() { Id = "en", Name = "English", IsDefault = false });
 
             modelBuilder.Entity<Category>().HasData(
                 new Category()
@@ -40,10 +40,10 @@ namespace MadamSolution.Data.Extensions
                  });
 
             modelBuilder.Entity<CategoryTranslation>().HasData(
-                  new CategoryTranslation() { Id = 1, CategoryId = 1, Name = "Áo Blazer", LanguageId = "vi-VN", SeoAlias = "ao-blazer", SeoDescription = "blazer nữ", SeoTitle = "blazer nữ" },
-                  new CategoryTranslation() { Id = 2, CategoryId = 1, Name = "Women Blazer", LanguageId = "en-US", SeoAlias = "women-blazer", SeoDescription = "blazer for women", SeoTitle = "blazer for women" },
-                  new CategoryTranslation() { Id = 3, CategoryId = 2, Name = "Áo phông nữ", LanguageId = "vi-VN", SeoAlias = "ao-phong-nu", SeoDescription = "áo phông cho nữ", SeoTitle = "áo phông cho nữ" },
-                  new CategoryTranslation() { Id = 4, CategoryId = 2, Name = "Women T-Shirt", LanguageId = "en-US", SeoAlias = "women-Tshirt", SeoDescription = "The Tshirt products for women", SeoTitle = "The Tshirt products for women" }
+                  new CategoryTranslation() { Id = 1, CategoryId = 1, Name = "Áo Blazer", LanguageId = "vi", SeoAlias = "ao-blazer", SeoDescription = "blazer nữ", SeoTitle = "blazer nữ" },
+                  new CategoryTranslation() { Id = 2, CategoryId = 1, Name = "Women Blazer", LanguageId = "en", SeoAlias = "women-blazer", SeoDescription = "blazer for women", SeoTitle = "blazer for women" },
+                  new CategoryTranslation() { Id = 3, CategoryId = 2, Name = "Áo phông nữ", LanguageId = "vi", SeoAlias = "ao-phong-nu", SeoDescription = "áo phông cho nữ", SeoTitle = "áo phông cho nữ" },
+                  new CategoryTranslation() { Id = 4, CategoryId = 2, Name = "Women T-Shirt", LanguageId = "en", SeoAlias = "women-Tshirt", SeoDescription = "The Tshirt products for women", SeoTitle = "The Tshirt products for women" }
                     );
 
             modelBuilder.Entity<Product>().HasData(
@@ -62,7 +62,7 @@ namespace MadamSolution.Data.Extensions
                      Id = 1,
                      ProductId = 1,
                      Name = "Áo phông trơn zara",
-                     LanguageId = "vi-VN",
+                     LanguageId = "vi",
                      SeoAlias = "ao-phong-tron-zara",
                      SeoDescription = "Áo phông trơn zara",
                      SeoTitle = "Áo phông trơn zara",
@@ -74,7 +74,7 @@ namespace MadamSolution.Data.Extensions
                         Id = 2,
                         ProductId = 1,
                         Name = "Zara T-Shirt Women",
-                        LanguageId = "en-US",
+                        LanguageId = "en",
                         SeoAlias = "zara-t-shirt-women",
                         SeoDescription = "Áo phông zara",
                         SeoTitle = "Áo phông zara",

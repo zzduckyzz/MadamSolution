@@ -115,6 +115,74 @@ namespace MadamSolution.Data.Extensions
                 RoleId = roleId,
                 UserId = adminId
             });
+            modelBuilder.Entity<Slide>().HasData(
+                new Slide()
+                {
+                    Id = 1,
+                    Name = "Thời trang nữ cao cấp",
+                    Description = "Hàng chất lượng mà giá cả lại phải chăng tốt nhất thị trường",
+                    Url="#",
+                    SortOrder = 1,
+                    Image = "/themes/images/carousel/1.png",
+                    Status = Status.Active
+
+                },
+                new Slide()
+                {
+                    Id = 2,
+                    Name = "Thời trang nữ cao cấp",
+                    Description = "Hàng chất lượng mà giá cả lại phải chăng tốt nhất thị trường",
+                    Url = "#",
+                    SortOrder = 2,
+                    Image = "/themes/images/carousel/2.png",
+                    Status = Status.Active
+
+                },
+                new Slide()
+                {
+                    Id = 3,
+                    Name = "Thời trang nữ cao cấp",
+                    Description = "Hàng chất lượng mà giá cả lại phải chăng tốt nhất thị trường",
+                    Url = "#",
+                    SortOrder = 3,
+                    Image = "/themes/images/carousel/3.png",
+                    Status = Status.Active
+
+                },
+                new Slide()
+                {
+                    Id = 4,
+                    Name = "Thời trang nữ cao cấp",
+                    Description = "Hàng chất lượng mà giá cả lại phải chăng tốt nhất thị trường",
+                    Url = "#",
+                    SortOrder = 4,
+                    Image = "/themes/images/carousel/4.png",
+                    Status = Status.Active
+
+                },
+                new Slide()
+                {
+                    Id = 5,
+                    Name = "Thời trang nữ cao cấp",
+                    Description = "Hàng chất lượng mà giá cả lại phải chăng tốt nhất thị trường",
+                    Url = "#",
+                    SortOrder = 5,
+                    Image = "/themes/images/carousel/5.png",
+                    Status = Status.Active
+
+                },
+                new Slide()
+                {
+                    Id = 6,
+                    Name = "Thời trang nữ cao cấp",
+                    Description = "Hàng chất lượng mà giá cả lại phải chăng tốt nhất thị trường",
+                    Url = "#",
+                    SortOrder = 6,
+                    Image = "/themes/images/carousel/6.png",
+                    Status = Status.Active
+
+                }
+            ) ;
 
 
         }

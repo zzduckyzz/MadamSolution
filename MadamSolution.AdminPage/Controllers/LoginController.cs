@@ -5,7 +5,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using MadamSolution.AdminApp.Services;
+using MadamSolution.Api;
 using MadamSolution.Utilities.Constants;
 using MadamSolution.ViewModels.System.Users;
 using Microsoft.AspNetCore.Authentication;
@@ -64,7 +64,7 @@ namespace MadamSolution.AdminApp.Controllers
 
             return RedirectToAction("Index", "Home");
         }
-        
+
         private ClaimsPrincipal ValidateToken(string jwtToken)
         {
             IdentityModelEventSource.ShowPII = true;

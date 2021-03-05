@@ -5,7 +5,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="Views\Home\Index.cshtml" />
+    <None Include="Views\Home\Privacy.cshtml" />
+    <None Include="Views\Login\Index.cshtml" />
+    <None Include="Views\Product\CategoryAssign.cshtml" />
+    <None Include="Views\Product\Create.cshtml" />
+    <None Include="Views\Product\Index.cshtml" />
+    <None Include="Views\Shared\Components\Navigation\Default.cshtml" />
     <None Include="Views\Shared\Components\Pager\Default.cshtml" />
+    <None Include="Views\Shared\Error.cshtml" />
+    <None Include="Views\Shared\_Layout.cshtml" />
+    <None Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
+    <None Include="Views\User\Create.cshtml" />
+    <None Include="Views\User\Delete.cshtml" />
+    <None Include="Views\User\Details.cshtml" />
+    <None Include="Views\User\Edit.cshtml" />
+    <None Include="Views\User\Index.cshtml" />
+    <None Include="Views\User\RoleAssign.cshtml" />
+    <None Include="Views\_ViewImports.cshtml" />
+    <None Include="Views\_ViewStart.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,6 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MadamSolution.Api\MadamSolution.Api.csproj" />
     <ProjectReference Include="..\MadamSolution.Utilities\MadamSolution.Utilities.csproj" />
     <ProjectReference Include="..\MadamSolution.ViewModels\MadamSolution.ViewModels.csproj" />
   </ItemGroup>

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using MadamSolution.AdminApp.Services;
+using MadamSolution.Api;
 using MadamSolution.ViewModels.Common;
 using MadamSolution.ViewModels.System.Users;
 using Microsoft.AspNetCore.Authentication;
@@ -33,7 +33,7 @@ namespace MadamSolution.AdminApp.Controllers
             _roleApiClient = roleApiClient;
         }
 
-        public async Task<IActionResult> Index(string keyword, int pageIndex = 1, int pageSize = 1)
+        public async Task<IActionResult> Index(string keyword, int pageIndex = 1, int pageSize = 10)
         {
             var request = new GetUserPagingRequest()
             {

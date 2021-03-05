@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MadamSolution.BackendApi", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MadamSolution.AdminApp", "MadamSolution.AdminPage\MadamSolution.AdminApp.csproj", "{CB85F7AE-D029-4539-B033-D5712F726713}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MadamSolution.Api", "MadamSolution.Api\MadamSolution.Api.csproj", "{C6F67CD0-0387-49C8-97BE-CFF7AD201C35}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{CB85F7AE-D029-4539-B033-D5712F726713}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB85F7AE-D029-4539-B033-D5712F726713}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB85F7AE-D029-4539-B033-D5712F726713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6F67CD0-0387-49C8-97BE-CFF7AD201C35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6F67CD0-0387-49C8-97BE-CFF7AD201C35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6F67CD0-0387-49C8-97BE-CFF7AD201C35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6F67CD0-0387-49C8-97BE-CFF7AD201C35}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
